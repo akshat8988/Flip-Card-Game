@@ -1,0 +1,208 @@
+body
+{
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+}
+
+#div1,#div2
+{
+color: white;
+text-align: center;
+line-height: 2em;
+
+}
+
+#div3
+{
+
+display: flex;
+justify-content: center;
+margin-top: 2%;
+
+}
+
+/*  */
+.flip-box {
+   
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    margin: 0 5px;
+    mix-blend-mode: lighten;
+    
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+     background-color: rgb(73, 66, 34);
+  
+  
+  }
+      
+  .back {
+    transform: rotateY(180deg);
+  }
+
+
+/*  */
+section{
+  height: 100vh;
+  overflow: hidden;
+
+}
+section::before{
+
+  position: absolute;
+  /* background: linear-gradient(to right, #c6e6e3,#c6e6e3,#c6e6e3,#c6e6e3,#c6e6e3,#c6e6e3); */
+
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: rgb(6, 53, 71);
+  font-size: 2em;
+  font-family: 'Blaka', cursive;
+
+  mix-blend-mode: lighten;
+  
+}
+h1 span{
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate{
+  0%{
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px)
+  }
+  100%{
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter:blur(0)
+  }
+}
+h1 span:nth-child(1){
+ 
+  opacity: 0;
+  animation-delay: 2s;
+}
+h1 span:nth-child(2){
+  opacity: 0;
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(3){
+  opacity: 0;
+  animation-delay: 2.75s;
+}
+h1 span:nth-child(4){
+  opacity: 0;
+  animation-delay: 3s;
+}
+h1 span:nth-child(5){
+ 
+  opacity: 0;
+  animation-delay: 3.5s;
+}
+h1 span:nth-child(6){
+  opacity: 0;
+  animation-delay: 3.75s;
+}
+h1 span:nth-child(7){
+  opacity: 0;
+  animation-delay: 4s;
+}
+h1 span:nth-child(8){
+  opacity: 0;
+  animation-delay: 4.5s;
+}
+h1 span:nth-child(9){
+  opacity: 0;
+  animation-delay: 4.75s;
+}
+h1 span:nth-child(10){
+  opacity: 0;
+  animation-delay: 5s;
+}
+h1 span:nth-child(11){
+  opacity: 0;
+  animation-delay: 5.25s;
+}
+h1 span:nth-child(12){
+  opacity: 0;
+  animation-delay: 5.5s;
+}
+
+h1 span:nth-child(13){
+opacity: 0;
+animation-delay: 5.75s;
+}
+
+h1 span:nth-child(14){
+opacity: 0;
+animation-delay: 6.5s;
+}
+h1 span:nth-child(15){
+opacity: 0;
+animation-delay: 6.75s;
+}
+
+h1 span:nth-child(16){
+  opacity: 0;
+  animation-delay: 7s;
+  }
+  h1 span:nth-child(17){
+    opacity: 0;
+    animation-delay: 7.5s;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Merriweather+Sans:wght@500&family=Monoton&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;1,8..144,100;1,8..144,200&family=Ubuntu&display=swap');
+
+#content{
+display: none;
+
+}
+
+
+/* game finished */
+
+@font-face {
+  font-family: 'Sofia';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sofia/v14/8QIHdirahM3j_su5uI0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.font-effect-neon {
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em rgb(10, 72, 129),0 0 0.6em rgb(11, 77, 138), 0 0 0.8em rgb(6, 78, 146), 0 0 1.0em rgb(7, 70, 129), 0 0 1.2em rgb(6, 70, 129);
+  color: #fff;
+}
+.font-effect-outline {
+  text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+  color: #fff;
+}
+.font-effect-emboss {
+  text-shadow: 0px 1px 1px #fff, 0 -1px 1px #000;
+  color: #ddd;
+}
+.font-effect-shadow-multiple {
+  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
